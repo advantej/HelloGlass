@@ -45,6 +45,24 @@ Create CardScrollerView member variable, create a inner class for adapter
 ** Code : Check point 3 **
 
 
+// === Live Card
+
+=> Task : Create simple live card (low frequency updating)
+
+https://developers.google.com/glass/develop/gdk/live-cards
+- Create Service (LiveCard1Service) 1 is because we'll soon write another LiveCard service (for high frequency LiveCards)
+- Create live_card layout
+- Fill up onStartCommand : create livecard, create remoteview 
+- Create MenuActivity for setAction
+- setAction
+- Create voice trigger
+- Add voice trigger in manifest
+
+
+** Code : Check point 3 **
+
+
+
 
 
 

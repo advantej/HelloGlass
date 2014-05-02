@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_lc1_stop"
+          android:icon="@drawable/ic_launcher"
+          android:title="@string/menu_stop"
+          />
+
+    <item android:id="@+id/menu_lc1_detail"
+          android:icon="@drawable/ic_launcher"
+          android:title="@string/menu_detail"
+        />
+
+</menu>
