@@ -34,6 +34,16 @@ compileSdkVersion "Google Inc.:Glass Development Kit Preview:19"
 
 Create CardScrollerView member variable, create a inner class for adapter
 
+** Code : Check point 2 **
+
+=> Task : Add a menu, read
+
+- Create res/menu directory and add menu xml
+- onCreateOptionsMenu/onOptionsItemSelected
+- selectedCard index etc...
+
+** Code : Check point 3 **
+
 
 
 
