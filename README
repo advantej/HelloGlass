@@ -1,3 +1,5 @@
+=> Task : Initial setup and hello glass screen
+
 - Make sure Glass Preview SDK (API level 19) is downloaded
 - Create blank project (without any activity)
 - How to start application : Set up voice trigger
@@ -23,6 +25,17 @@
 - This is Immersion : tradition android way
 Your application takes over the screen, but after time out its gone again. Not really immersive!
 Design decision
+
+NOTE : update build.gradle to point to Sneak peak version
+
+compileSdkVersion "Google Inc.:Glass Development Kit Preview:19"
+
+=> Task : Implement a Card Scroller view
+
+Create CardScrollerView member variable, create a inner class for adapter
+
+
+
 
 
 
