@@ -59,11 +59,23 @@ https://developers.google.com/glass/develop/gdk/live-cards
 - Add voice trigger in manifest
 
 
-** Code : Check point 3 **
+** Code : Check point 4 **
+
+
+// === Live Card 2
+
+=> Task : Create simple live card (high frequency updating)
+
+- Create Service (LiveCard2Service)
+- Create live_card2 layout
+- Create LiveCard2View class
+- Create ViewDrawer class 
+- Hook up everything in the LiveCard2Service
+- Create voice trigger
+- Add voice trigger in the manifest
 
 
 
-
-
+** Code : Check point 5 **
 
 

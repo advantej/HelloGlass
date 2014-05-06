@@ -20,14 +20,13 @@
                 android:name="com.google.android.glass.VoiceTrigger"
                 android:resource="@xml/voice_trigger_start" />
         </activity>
-
-        <activity android:name=".LiveCard1MenuActivity"/>
+        <activity android:name="com.advantej.glass.helloglass.LiveCard1MenuActivity" />
+        <activity android:name="com.advantej.glass.helloglass.LiveCard2MenuActivity" />
 
         <service
             android:name="com.advantej.glass.helloglass.LiveCard1Service"
             android:enabled="true"
             android:exported="true" >
-
             <intent-filter>
                 <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
             </intent-filter>
@@ -35,7 +34,18 @@
             <meta-data
                 android:name="com.google.android.glass.VoiceTrigger"
                 android:resource="@xml/voice_trigger_start_lc1" />
+        </service>
+        <service
+            android:name="com.advantej.glass.helloglass.LiveCard2Service"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
 
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger_start_lc2" />
         </service>
     </application>
 
