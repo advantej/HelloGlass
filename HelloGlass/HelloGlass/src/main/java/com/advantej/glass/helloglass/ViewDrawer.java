@@ -2,6 +2,8 @@ package com.advantej.glass.helloglass;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
+import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.View;
 
@@ -13,6 +15,7 @@ import com.google.android.glass.timeline.DirectRenderingCallback;
 class ViewDrawer implements DirectRenderingCallback
 {
 
+    private static final String TAG = "ViewDrawer";
     private LiveCard2View mLiveCard2View;
     private SurfaceHolder mHolder;
 
@@ -89,13 +92,19 @@ class ViewDrawer implements DirectRenderingCallback
             canvas = mHolder.lockCanvas();
         } catch (Exception e)
         {
-//            Log.e(TAG, "Unable to lock canvas: " + e);
+            Log.e(TAG, "Unable to lock canvas: " + e);
             return;
         }
-        if (canvas != null)
-        {
+
+        if (canvas != null) {
+            canvas.drawColor(Color.BLACK);
             view.draw(canvas);
-            mHolder.unlockCanvasAndPost(canvas);
+
+            try {
+                mHolder.unlockCanvasAndPost(canvas);
+            } catch (RuntimeException e) {
+                Log.d(TAG, "unlockCanvasAndPost failed", e);
+            }
         }
     }
 }

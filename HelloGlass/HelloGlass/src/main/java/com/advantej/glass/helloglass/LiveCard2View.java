@@ -20,7 +20,7 @@ public class LiveCard2View extends FrameLayout
 
     private Listener mChangeListener;
 
-    static final long DELAY_MILLIS = 500;
+    static final long DELAY_MILLIS = 41;
 
     public LiveCard2View(Context context)
     {
